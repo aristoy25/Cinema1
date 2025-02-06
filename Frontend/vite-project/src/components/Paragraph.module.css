@@ -1,0 +1,8 @@
+.paragraph{
+    font-size: 1rem;
+    color:rgb(109, 100, 90);
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    line-height: 1;
+    width: 60%;
+}
