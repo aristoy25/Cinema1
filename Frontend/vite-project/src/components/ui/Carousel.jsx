@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styles from './Carousel.module.css';
 import ArrowLeft from '../../assets/LeftArrow.svg';
+import FilmSvg from '../../assets/filmObj.svg';
 
 const Carousel = ({ images }) => {
   const [index, setIndex] = useState(0);
@@ -52,6 +53,7 @@ document.addEventListener('keydown', handleKeyDown);
 
   return (
 <div className={styles.container}>
+    <img src={FilmSvg} alt="Film object" className={styles.filmSvg}/>
     <h3>Top Picks of the month</h3>
     <div ref={carouselRef} className={styles.carousel}>
       <button className={styles.button} onClick={prevSlide}>

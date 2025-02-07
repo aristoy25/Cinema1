@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Movies.css";
 import Movie from "./Movie";
 import Carousel from "./ui/Carousel";
+import ChairSvg from "../assets/Chair.svg";
 
 const Movies = () => {
     const [movies, setMovies] = useState([
@@ -29,11 +30,14 @@ const Movies = () => {
 
     return (
         <div className="container">
+        <div className="movieVertical">
         <ul id="moviesul">
             {movies.map((movie) => (
                 <Movie key={movie.id} movie={ movie } />
             ))}
         </ul>
+        <img src={ChairSvg} alt="chair" className="chairSvg"/>
+        </div>
 
         <Carousel images={images} />
 

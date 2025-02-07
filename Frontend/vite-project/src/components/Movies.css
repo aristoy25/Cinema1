@@ -3,7 +3,6 @@
     height: fit-content;
     padding-top: 0.5rem;
     margin-bottom: 10px;
-
 }
 
 #moviesul{
@@ -57,4 +56,19 @@ button{
     cursor: pointer;
     width: 60%;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.movieVertical{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.chairSvg{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 250px;
+    opacity: 0.5;   
 }
